@@ -6,8 +6,8 @@ agent any
 stages {
 stage('build') {
    steps {
-withMaven(maven : 'apache-maven-3.6.1') {
-bat'mvn clean compile'
+withMaven(maven : 'apache-maven-3.6.3') {
+bat'mvn compile'
 }}}
 stage('testing') {
    steps {
