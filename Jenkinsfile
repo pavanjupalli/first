@@ -10,7 +10,9 @@ stages {
 stage('build') {
    steps {
 withMaven(maven: 'maven-3') {
-bat'mvn  compile'
+    echo 'i am at compile'
+
+    sh 'mvn  compile'
 }}}
 stage('testing') {
    steps {
